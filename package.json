@@ -1,0 +1,17 @@
+{
+  "name": "yangbot",
+  "version": "1.0.0",
+  "description": "TA on Slack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yang Li",
+  "engines": {
+    "node": "5.2.0"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "slackbot-api": "^1.12.3"
+  }
+}
