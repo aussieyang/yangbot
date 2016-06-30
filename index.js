@@ -42,6 +42,10 @@ bot.listen(/What is the meaning of life?/i, function (message) {
   message.reply('42');
 });
 
+bot.listen(/Sax/i, function (message) {
+  message.reply('https://www.youtube.com/watch?v=IBpbPmDOkOk');
+});
+
 bot.listen(/Joke/i, function (message) {
   message.reply(bot.random('Bob lost his job for taking a day off. He worked for Google Calendar.',
   'My dog used to chase people on a bike a lot. It got so bad, finally I had to take his bike away.',
