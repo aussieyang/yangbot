@@ -1,3 +1,5 @@
+console.log('Hello hello yo yo yo')
+
 var Secrets = require("./secrets.js");
 
 var Bot = require('slackbot-api');
