@@ -9,7 +9,7 @@ var bot = new Bot({
 
 
 bot.listen(/Hello/i, function (message) {
-  message.reply('Hey man!');
+  message.reply('Hey stranger!');
 });
 
 bot.listen(/Hug me/i, function (message) {
@@ -46,4 +46,8 @@ bot.listen(/Javascript/i, function (message) {
   'Semi-colons, not commas in your for loop?',
   'Looping outside boundaries of array?',
   'Mixed up && and || ?'));
+});
+
+bot.listen(/Quickstart rails/i, function (message) {
+  message.reply(" ```1. ruby -v \n2. rails -version \n3. if rails -version returns error, 'gem install rails' \n4. rails new appname -d postgresql \n``` ");
 });
