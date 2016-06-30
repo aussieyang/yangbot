@@ -13,6 +13,7 @@
   },
   "license": "ISC",
   "dependencies": {
+    "node-rest-client": "^1.8.0",
     "nodemon": "^1.9.2",
     "slackbot-api": "^1.12.3"
   }
