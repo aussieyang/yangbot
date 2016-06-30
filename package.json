@@ -12,6 +12,7 @@
   },
   "license": "ISC",
   "dependencies": {
+    "nodemon": "^1.9.2",
     "slackbot-api": "^1.12.3"
   }
 }
