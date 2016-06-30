@@ -49,5 +49,5 @@ bot.listen(/Javascript/i, function (message) {
 });
 
 bot.listen(/Quickstart rails/i, function (message) {
-  message.reply(" ```1. ruby -v \n2. rails -version \n3. if rails -version returns error, 'gem install rails' \n4. rails new appname -d postgresql \n``` ");
+  message.reply(" ```1. ruby -v \n2. rails -version \n3. if rails -version returns error, 'gem install rails' \n4. rails new appname -d postgresql \n5. rails g model resourcename \n6. edit your model/resourcename.rb if you did not generate a structure \n7. rails g controller resourcename \n8. edit your controllers/resourcename_controller.rb if you did not generate options \n9. rake db:create \n10. rake db:migrate \n11. create routes.rb inside your config file if it is not there; add routes with resource:resourename or type manually \n12. rails s on console to start server \n``` ");
 });
