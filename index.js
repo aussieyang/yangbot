@@ -1,3 +1,15 @@
+// var cleverbot = require("cleverbot.io"),
+// var Cbot = new cleverbot('Fnjd6hQB1G2UuLLf','oEj2FhAX9ahhRRQGXhdFDNhwt2J2nkaI');
+// bot.create(function (err, session) {
+//   // session is your session name, it will either be as you set it previously, or cleverbot.io will generate one for you
+//
+//   // Woo, you initialized cleverbot.io.  Insert further code here
+// });
+//
+// bot.ask("Hello Yang!", function (err, response) {
+//   console.log(response); // Will likely be: "Living in a lonely world"
+// });
+
 // access API using node-rest-client
 var Client = require('node-rest-client').Client;
 
