@@ -1,7 +1,8 @@
-// access API using node-rest-client
-var Client = require('node-rest-client').Client;
 var express = require('express');
 var app = express();
+
+// access API using node-rest-client
+var Client = require('node-rest-client').Client;
 var client = new Client();
 
 var gifCollection = [];
