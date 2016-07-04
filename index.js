@@ -1,6 +1,7 @@
 // access API using node-rest-client
 var Client = require('node-rest-client').Client;
-
+var express = require('express');
+var app = express();
 var client = new Client();
 
 var gifCollection = [];
@@ -19,13 +20,13 @@ client.get("http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC", functi
 });
 
 // grabbing token from secrets.js
-var Secrets = require("./secrets.js");
+// var Secrets = require("./secrets.js");
 
 var Bot = require('slackbot-api');
 
 // create a bot
 var bot = new Bot({
-    token: Secrets.token
+    token: 'xoxb-55217346848-f7yuPHjbOZuvw2cuhdrj1k2s'
 });
 
 // var cleverbot = require("cleverbot.io"),
@@ -128,3 +129,4 @@ bot.listen(/gif me a gif/i, function (message) {
 
 
 // Namespace not working. One trigger creates listen.
+app.listen(5000 || process.env.PORT);
