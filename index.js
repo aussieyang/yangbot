@@ -20,13 +20,13 @@ client.get("http://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC", functi
 });
 
 // grabbing token from secrets.js
-// var Secrets = require("./secrets.js");
+var Secrets = require("./secrets.js");
 
 var Bot = require('slackbot-api');
 
 // create a bot
 var bot = new Bot({
-    token: 'xoxb-55217346848-f7yuPHjbOZuvw2cuhdrj1k2s'
+    token: Secrets.token
 });
 
 // var cleverbot = require("cleverbot.io"),
