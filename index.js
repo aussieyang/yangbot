@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 
+app.set('port', (process.env.PORT || 5000));
+
 //For avoiding Heroku $PORT error
 app.get('/', function(request, response) {
     var result = 'App is running'
@@ -138,4 +140,4 @@ bot.listen(/gif me a gif/i, function (message) {
 
 
 // Namespace not working. One trigger creates listen.
-app.listen(5000 || process.env.PORT);
+// app.listen(5000 || process.env.PORT);
